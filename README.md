@@ -25,7 +25,7 @@ Siva:   The different colours on the map, along with the legend is helping me to
 Monica: Eventhough the speed of the animation remains the same, I can see the changes from one category to another category clearly. Also felt that the circle representations for the legend was too big especially the green one.
 Anu:    The map of 2004 has more green coloured circles. During the animation, I could see that many circles changed its colour and the map of 2016 has more orange and red circles than 2004.
 
-The index_final.html illustrates the interactive version of the map. This includes a slider to select a year, a Playbutton is used to play the animation and Stopbutton is used to stop the animation.
+The index.html illustrates the interactive version of the map. This includes a slider to select a year, a Playbutton is used to play the animation and Stopbutton is used to stop the animation.
 
 Feedbacks:
 

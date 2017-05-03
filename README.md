@@ -8,7 +8,7 @@ Analysis of the Flight data reveals that
 
 A bar chart named Bar_Chart_Flight_Data.png is used to see the trend and is included.  
 
-The index_one.html had an animation with just single coloured representations on the map. The variation in flight counts are presented by its size.
+The index_one.html has an animation with just single coloured representations on the map. The variation in flight counts are presented by its size.
 
 Feedbacks: 
 
@@ -17,7 +17,7 @@ Monica: Animation seems to be fast ,thus preventing us from grasping the informa
 Anu:    Various size of the circles represents the variation but couldn’t get how big is the variation.
 
 
-The index_two.html had an animation with three different colours and a legend was included to interpret the colours.
+The index_two.html has an animation with three different colours and a legend was included to interpret the colours.
 
 Feedbacks:
 

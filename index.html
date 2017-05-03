@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  
+
+  
+    <style>
+      circle {
+        fill: orange;
+        stroke: black;
+        stroke-width: 0.7;
+        opacity: 0.7;
+      }
+      h2 {
+        text-align: center;
+        color: black;
+      }
+     
+	   
+	    
+        
+    </style>
+</head>
+<body>
+  
+  <script type="text/javascript">  
+    var inputValue = 2004;
+    var years = [];
+    for(var i = 2004; i <= 2016; i=i+1) {
+            years.push(i);
+    }
+   
+    d3.json("statesmap.json", function(error, geo_data){
+        if (error) throw error;
+        var format = d3.time.format("%Y");
+        var margin = 75,
+            width = 1400 - margin,
+            height = 600 - margin;
+        d3.csv("2004-2016.csv", function(error1, data_2008) {
+          if (error1) throw error1;
+          
+
+          data_2008.forEach(function(d){
+
+            var projection = d3.geo.albersUsa()
+                                   .scale(1200)
+                                   .translate( [width / 2, height / 2]);
+            var coords = projection([+d.Longitude, +d.Latitude]);
+            d['x']=coords[0];
+            d['y']=coords[1];
+            d['Year'] = format.parse(d['Year'])
+            d['State'] = d['State'];
+            return d;
+          });
+          
+         "use strict";
+
+          d3.select("body")
+            .append("h2");
+
+          d3.select("h2")
+            .text("Number of Flights per state " );
+
+          var svg = d3.select("body")
+                      .append("svg")
+                      .attr("width", width + margin)
+                      .attr("height", height + margin)
+                      .append('g')
+                      .attr('class', 'map');
+
+          /*var years = [];
+          for(var i = 2004; i <= 2016; i=i+1) {
+            years.push(i);
+          }*/
+       
+          var projection = d3.geo.albersUsa()
+                               .scale(1200)
+                              .translate( [width / 2, height / 2]);
+
+          var path = d3.geo.path().projection(projection);
+
+          var map = svg.selectAll('path')
+                     .data(geo_data.features)
+                     .enter()
+                     .append('path')
+                     .attr('d', path)
+                     .style('fill', 'lightBlue')
+                     .style('stroke', 'black')
+                     .style('stroke-width', 0.5);
+
+       
+          var nested = d3.nest()
+                       .key(function(d) {
+                          return d['Year'].getUTCFullYear();
+                        })
+                       .entries(data_2008);
+        
+          var flight_arr = new Array();
+          for (var k in nested) {
+            for (var kk in nested[k].values) {
+                flight_arr.push(+nested[k].values[kk].Flight_count);
+            }
+          }
+        //console.log(arr);
+          var flight_max = d3.max(flight_arr);
+          var radius = d3.scale.sqrt()
+                       .domain([0, flight_max])
+                       .range([0, 35]);
+
+          function key_func(d) {
+                return d['key'];
+          }
+
+            
+          function update(year) {
+          	//d3.select("#timeslide").property("value", 2004);
+            var filtered = nested.filter(function(d) {
+                  return new Date(d['key']).getUTCFullYear() === year;
+            });
+          //console.log(year);
+          
+            d3.select("h2")
+              .text("Number of Flights per state in the year " + year);
+
+            var len=filtered[0].values.length;
+
+            var abc = new Array();
+          
+            for (var k in filtered[0].values) {
+                abc.push({key:filtered[0].values[k].State,
+                  values:{r:radius(filtered[0].values[k].Flight_count),
+                  x:filtered[0].values[k].x,
+                  y:filtered[0].values[k].y,
+                  Flight:filtered[0].values[k].Flight_count}
+                });
+            }
+          
+            var circles = svg.selectAll('circle')
+                             .data(abc.sort(function(a, b) { 
+                               return b.Flight_count - a.Flight_count;
+                               }), key_func);
+            circles.exit().remove();
+          
+            circles.enter().append("circle");
+
+            circles.attr('cx', function(d) { return d.values.x; })
+                   .attr('cy', function(d) { return d.values.y; })
+                   .attr('r', function(d) { return d.values.r; })
+                   
+
+            
+
+           
+
+            
+
+            svg.selectAll('path')
+                .transition()
+                .duration(500)
+                
+          }
+         
+
+          var year_idx = 0;
+          togglePressed(0);
+      
+     
+          
+        
+          
+
+          function togglePressed(index){
+            
+            var year_interval1 = setInterval(function() {
+              update(years[index]);
+             
+              //console.log(years[index]);
+              index++;
+              if(index >= years.length) {
+                clearInterval(year_interval1);
+               
+                
+                //update(2004);
+                
+                 
+              }
+
+              
+              
+            }, 1000);
+            
+          }
+          
+        //} 
+
+     	
+              
+        });
+      });
+	
+
+    </script>
+  </body>
+
+</html>

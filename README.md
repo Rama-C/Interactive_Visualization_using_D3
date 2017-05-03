@@ -6,6 +6,7 @@ Analysis of the Flight data reveals that
 - The states like Texas, California, Florida and Newyork always maintained high flight operating counts
 - The states like Montana, Idaho, North Dakota and South Dakota always had low fight operating counts.
 
+A bar chart named Bar_Chart_Flight_Data.png is used to see the trend and is included.  
 
 The index_one.html had an animation with just single coloured representations on the map. The variation in flight counts are presented by its size.
 

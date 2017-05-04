@@ -35,7 +35,9 @@ The index_one.html has an animation with single coloured representations on the 
 Viewer's response:
 
 Siva:   I could see that the size of the circles changes every year but I couldn’t get much information from this. 
+
 Monica: Animation seems to be fast ,thus preventing me from grasping the information.
+
 Anu:    Various size of the circles represents the variation but couldn’t get how big is the variation.
 
 
@@ -44,7 +46,9 @@ The index_two.html has an animation with three different colours and a legend is
 Viewer's response:
 
 Siva:   The different colours on the map, along with the legend is helping me to get some information.I can differentiate the states having high/low flight counts over the years. 
+
 Monica: Eventhough the speed of the animation remains the same, I can see the changes from one category to another category clearly. Also the circle representations for the legend was too big especially the green one.
+
 Anu:    The map of 2004 has more green coloured circles. During the animation, I could see that many circles changed its colour and the map of 2016 has more orange and red circles than 2004.
 
 The index.html illustrates the interactive version of the map. This includes a slider to select a year, a Playbutton is used to play the animation and Stopbutton is used to stop the animation.
@@ -52,7 +56,9 @@ The index.html illustrates the interactive version of the map. This includes a s
 Viewer's response:
 
 Siva:   The slider helps me to see the data for an year.Also it helps me to start the animation from the year of my choice and stop it in between.
+
 Monica: I can take my own time to get the information. The changes in the map for consecutive years can be compared easily.
+
 Anu:    The interactive things on the visualisation helps me to see the change and also to find out  variations over the years. Now, I can focus on all the circles for a year.
 
 The Index_final.html includes a textbox which shows the total US domestic flight operations for a specific year. A tooltip is included to show the name of the state and the flight operation count for that state for a specific year on mousehover.

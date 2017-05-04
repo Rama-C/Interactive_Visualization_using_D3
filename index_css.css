@@ -1,0 +1,88 @@
+ circle {
+        
+        stroke: black;
+        stroke-width: 0.7;
+        opacity: 0.7;
+      }
+      h2 {
+        text-align: center;
+        color: black;
+        top: 40px;
+        font-size: 30pt;
+      }
+      #sliderContainer {
+        text-align: center;
+        position: relative;
+        top: 160px;
+        left:550px;
+      }
+      #option {
+        text-align: center;
+        position: relative;
+        top: 165px;
+        left:550px;
+      }
+      #playbutton  {
+        background-color: rgb(251, 201, 127);
+        padding: 3px;
+        margin: 7px;
+        
+      }
+      #stopbutton  {
+        background-color: red;
+        padding: 3px;
+        margin: 7px;
+        
+      }
+      #count{
+        text-align: center;
+        position: relative;
+        top: 50px;
+        
+      }
+      p{
+        text-align: center;
+         position: relative;
+
+
+      }
+      #intro {
+        text-align: center;
+      }
+      #pintro {
+        margin: auto;
+        width: 60%
+      }
+      .d3-tip {
+        line-height: 1;
+        font-weight: bold;
+        padding: 12px;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        border-radius: 2px;
+      }
+
+
+      .d3-tip:after {
+        box-sizing: border-box;
+        display: inline;
+        font-size: 10px;
+        width: 100%;
+        line-height: 1;
+        color: rgba(0, 0, 0, 0.8);
+        content: "\25BC";
+        position: absolute;
+        text-align: center;
+      }
+
+
+      .d3-tip.n:after {
+        margin: -1px 0 0 0;
+        top: 100%;
+        left: 0;
+      }
+      .circle:hover{
+        fill:orangered;
+      }
+      
+      

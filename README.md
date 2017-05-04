@@ -71,8 +71,11 @@ Monica: The description allows me to understand the data better and made me curi
 
 Anu:   Tooltip is helping me to map the size of the circle with its numbers. Total flights per year value allows me to investigate on the described findings.
 
+The Index1_final.html includes a title for the legend , added thousand separators and text to the title. The textbox and its title are repoistioned. 
 
+Viewer's response:
 
+Siva:  The separators helps in reading the numbers quickly. The interactive elements are poistioned well and looks nice.
 
 
 Resources:

@@ -3,7 +3,7 @@ Flight data visualization uses the data of domestic flights operated from all US
  
 Analysis of the Flight data reveals that 
 - The number of flights operated per year gradually decreases after the year 2007 except the years 2012 and 2013. 
-- 
+- Texas, California, Florida, Georgia and Illinois are the top 5 states having high flight operations for all the years.
 
 A bar chart named Bar_Chart_Flight_Data.png is included to show the trend.  
 
@@ -37,7 +37,7 @@ Siva:   I could see that the size of the circles changes every year but I couldn
 
 Monica: Animation seems to be fast ,thus preventing me from grasping the information.
 
-Anu:    Various size of the circles represents the variation but couldn’t get how big is the variation.
+Anu:    Various sizes of the circles represents the variation but couldn’t get how big is the variation.
 
 
 The index_two.html has an animation with three different colours and a legend is included to interpret the colours.

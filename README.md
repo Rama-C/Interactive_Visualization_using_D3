@@ -2,31 +2,30 @@
 Flight data visualization uses the data of domestic flights operated from all US states for the years 2004 through 2016. Each state is represented by its capital in the US map. The number of flights operated from each state is animated for the years 2004 through 2016. Different colours and sizes are used on the map to represent the flight counts.
  
 Analysis of the Flight data reveals that 
-- The number of flights operated per year gradually decreases after the year 2007 except the year 2013. 
-- The states like Texas, California, Florida, Newyork always maintained high flight operating counts
-- The states like Montana, Idaho, North Dakota, South Dakota always had low fight operating counts.
+- The number of flights operated per year gradually decreases after the year 2007 except the years 2012 and 2013. 
+- 
 
 A bar chart named Bar_Chart_Flight_Data.png is included to show the trend.  
 
 Design
 
-The Flight data visualization involves the geographical location of all US states. It is a good idea to use the map to locate geographical data. For a year,the visualization shows the data of all 50 states at once and makes it easy to compare.
+The Flight data visualization involves the geographical location of all US states. It is a good idea to use the map to locate geographical data. For each year,the visualization shows the data of all 50 states at once and makes it easy to compare.
 
-The geographical location helps in placing the circles at specific positions. The capital of the state is used for position.  Position has the top ranking in visual encoding and is more accurate. Various sizes of the circles depicts variation in flight operations per state. Different colours on the map helped the viewer to recognize the groups. The viewer easily groups the datapoints of similar colour into one group.
+The geographical location helps in placing the circles at a specific positions and is more accurate. The capital of the state is used for representing the state. Various sizes of the circles represents the variation in flight operations per state. Different colours on the map helps the viewer to recognize the groups. The viewer easily groups the datapoints of similar colour into one group.
 
 Legend helps the viewer to get the details about the group. The viewer can grasp more information with the position, size, colour and legend.
 
-The tooltip helps the viewer to know the name of the state and its total flights operated for that year, when they hover on the datapoints. It allows the user to get the details like top 5  and bottom 5 flight operating states easily.
+The tooltip helps the viewer to know the name of the state and its total flights operated for that year on mouse hover. It allows the user to get the details like top 5  and bottom 5 flight operating states easily.
 
-A new textbox is added to show the total flights operated in that year. It gives an oppurtunity to the viewer to get the numbers and can compare with another year.
+A new textbox is added to show the total flight operations in that year. It includes all the states.It gives an oppurtunity to the viewer to get the numbers and can compare with another year.
 
 A slider is added for the viewer interaction. It allows the viewer to select any year and see the changes on the map quickly.
 
-Two buttons were added to improve the interaction. The play button renders an animation from the viewer selected year or from the year 2004 if slider is not slected. The stop button allows the user to stop the animation whenever they like.
+Two buttons are added to improve the interaction. The play button renders an animation from the viewer selected year or from the year 2004 if the slider is not slected. The stop button allows the user to stop the animation whenever they like.
 
-Slider,play and stop button allows the viewer to interact with the data. They need to kept as close as possible and allowing the viewer to maneuver easily, among these three controls. Placing the buttons just beneath the slider helps in less maneuver.
+Slider,Play and Stop button allows the viewer to interact with the data. They need to be kept as close as possible and allowing the viewer to maneuver easily, among these three controls. Placing the buttons just beneath the slider helps in less maneuver.
 
-With all these design criterias taken into consideration, a user friendly interaction can be created.
+With all these design criterias taken into consideration, an user friendly interaction can be created.
 
 Feedback
 
@@ -66,9 +65,11 @@ Introductory paragraph has been added to give the information about the dataset.
 
 Viewer's response:
 
-Siva:  Total flights per year allows me to compare with other years and allows me to find some trends. Tooltip allows me to find which states are doing good or bad. 
-Monica: The description allows me to understand the data better and made me curious to check whether the specified findings are true or not. Tooltip and textbox makes it easy for verification.
-Anu:   Tooltip is allowing me to map the size of the circle with its numbers. Total flights per year value allows me to check the specified findings.
+Siva:  Total flights per year allows me to compare with other years and to find some trends. Tooltip helps me to find which states are doing good or bad. 
+
+Monica: The description allows me to understand the data better and made me curious to check whether the your findings are true or not. Tooltip and textbox makes it easy for verification.
+
+Anu:   Tooltip is helping me to map the size of the circle with its numbers. Total flights per year value allows me to investigate on the described findings.
 
 
 

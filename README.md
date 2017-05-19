@@ -23,7 +23,7 @@ A slider is added for the viewer interaction. It allows the viewer to select any
 
 Two buttons are added to improve the interaction. The play button renders an animation from the viewer selected year or from the year 2004 if the slider is not slected. The stop button allows the user to stop the animation whenever they like.
 
-Slider,Play and Stop button allows the viewer to interact with the data. They need to be kept as close as possible and allowing the viewer to maneuver easily, among these three controls. Placing the buttons just beneath the slider helps in less maneuver.
+The Slider,Play and Stop button allows the viewer to interact with the data. They need to be kept as close as possible and allowing the viewer to maneuver easily, among these three controls. Placing the buttons just beneath the slider helps in less maneuver.
 
 With all these design criterias taken into consideration, an user friendly interaction can be created.
 

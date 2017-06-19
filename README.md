@@ -9,21 +9,21 @@ A bar chart named Bar_Chart_Flight_Data.png is included to show the trend.
 
 Design
 
-The Flight data visualization involves the geographical location of all US states. It is a good idea to use the map to locate geographical data. For each year,the visualization shows the data of all 50 states at once and makes it easy to compare.
+The Flight data visualization involves the geographical location of all US states. It is a good idea to use the map to locate the geographical data. For each year, the visualization shows the data of all 50 states at once and makes it easy to compare.
 
-The geographical location helps in placing the circles at a specific positions and is more accurate. The capital of the state is used for representing the state. Various sizes of the circles represents the variation in flight operations per state. Different colours on the map helps the viewer to recognize the groups. The viewer easily groups the datapoints of similar colour into one group.
+The geographical location helps in placing the circles at a specific positions and is more accurate. The capital of the state is used for representing the state. Various sizes of the circles represents the variation in flight operations per state. Different colours on the map helps the viewer to recognize the groups. The viewer can easily group the datapoints of similar colour into one group.
 
 Legend helps the viewer to get the details about the group. The viewer can grasp more information with the position, size, colour and legend.
 
 The tooltip helps the viewer to know the name of the state and its total flights operated for that year on mouse hover. It allows the user to get the details like top 5  and bottom 5 flight operating states easily.
 
-A new textbox is added to show the total flight operations in that year. It includes all the states.It gives an oppurtunity to the viewer to get the numbers and can compare with another year.
+A new textbox is added to show the total flight operations in that year. It includes all the states. It gives an oppurtunity to the viewer to get the numbers and can compare with another year.
 
 A slider is added for the viewer interaction. It allows the viewer to select any year and see the changes on the map quickly.
 
 Two buttons are added to improve the interaction. The play button renders an animation from the viewer selected year or from the year 2004 if the slider is not slected. The stop button allows the user to stop the animation whenever they like.
 
-The Slider,Play and Stop button allows the viewer to interact with the data. They need to be kept as close as possible and allowing the viewer to maneuver easily, among these three controls. Placing the buttons just beneath the slider helps in less maneuver.
+The Slider, Play and Stop button allows the viewer to interact with the data. They need to be kept as close as possible and allowing the viewer to maneuver easily, among these three controls. Placing the buttons just beneath the slider helps in less maneuver.
 
 With all these design criterias taken into consideration, an user friendly interaction can be created.
 
@@ -35,7 +35,7 @@ Viewer's response:
 
 Siva:   I could see that the size of the circles changes every year but I couldn’t get much information from this. 
 
-Monica: Animation seems to be fast ,thus preventing me from grasping the information.
+Monica: Animation seems to be fast, thus preventing me from grasping the information.
 
 Anu:    Various sizes of the circles represents the variation but couldn’t get how big is the variation.
 
@@ -54,11 +54,11 @@ The index.html illustrates the interactive version of the map. This includes a s
 
 Viewer's response:
 
-Siva:   The slider helps me to see the data for an year.Also it helps me to start the animation from the year of my choice and stop it in between.
+Siva:   The slider helps me to see the data for an year. Also it helps me to start the animation from the year of my choice and stop it in between.
 
 Monica: I can take my own time to get the information. The changes in the map for consecutive years can be compared easily.
 
-Anu:    The interactive things on the visualisation helps me to see the change and also to find out  variations over the years. Now, I can focus on all the circles for a year.
+Anu:    The interactive things on the visualisation helps me to see the change and also to find out variations over the years. Now, I can focus on all the circles for a year.
 
 The Index_final.html includes a textbox which shows the total US domestic flight operations for a specific year. A tooltip is included to show the name of the state and the flight operation count for that state for a specific year on mousehover.
 Introductory paragraph has been added to give the information about the dataset.
@@ -67,11 +67,11 @@ Viewer's response:
 
 Siva:  Total flights per year allows me to compare with other years and to find some trends. Tooltip helps me to find which states are doing good or bad. 
 
-Monica: The description allows me to understand the data better and made me curious to check whether the your findings are true or not. Tooltip and textbox makes it easy for verification.
+Monica: The description allows me to understand the data better and made me curious to check whether your findings are true or not. Tooltip and textbox makes it easy for verification.
 
 Anu:   Tooltip is helping me to map the size of the circle with its numbers. Total flights per year value allows me to investigate on the described findings.
 
-The Index1_final.html includes a title for the legend , added thousand separators and text to the title. The textbox and its title are repoistioned. 
+The Index1_final.html includes a title for the legend, added thousand separators and text to the title. The textbox and its title are repoistioned. 
 
 Viewer's response:
 
